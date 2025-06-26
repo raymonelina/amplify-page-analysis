@@ -63,3 +63,21 @@ a {
   font-weight: 800;
   text-decoration: none;
 }
+
+.split {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.split aside {
+  width: 200px;
+  padding: 1rem;
+  border-right: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+.split main {
+  flex: 1;
+  padding: 1rem;
+}
