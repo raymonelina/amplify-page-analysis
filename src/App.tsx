@@ -7,13 +7,14 @@ import UserRoster from './components/UserRoster';
 import { generateClient } from "aws-amplify/data";
 import { useAuthenticator } from '@aws-amplify/ui-react';
 
+import './App.css';
+
 const client = generateClient<Schema>();
 
 function App() {
   const { user, signOut } = useAuthenticator();
 
   const [todos, setTodos] = useState<Array<Schema["Todo"]["type"]>>([]);
-  const [sessionId, setSessionId] = useState<string | null>(null);
 
   useEffect(() => {
     const sub = client.models.Todo.observeQuery().subscribe({

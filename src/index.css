@@ -71,7 +71,7 @@ a {
 }
 
 .split aside {
-  width: 200px;
+  width: 400px;
   padding: 1rem;
   border-right: 1px solid #ccc;
   overflow-y: auto;
